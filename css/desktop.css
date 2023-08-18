@@ -1,0 +1,216 @@
+@media screen and (min-width: 1200px) {
+    header {
+        box-shadow: inset 100px 100px 110px rgba(0, 0, 0, 0.7);
+        background-image: url(../images/desktop/image-hero.jpg);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #desktopNav {
+        display: flex;
+        gap: 30px;
+    }
+    
+    #desktopNav>a {
+        position: relative;
+        cursor: pointer;
+        font-family: 'Alata', sans-serif;
+        font-size: 1.1rem;
+        color: white;
+    } 
+
+    #desktopNav>a::after {
+        margin-bottom: -3px;
+        content: " ";
+        width: 0%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    #desktopNav>a:hover::after {
+        width: 80%;
+    }
+    
+    .header {
+        padding: 3rem;
+    }
+
+    .title {
+        margin-left: 130px;
+        margin-top: 110px;
+        padding: 25px;
+        border: 2px solid white;
+        width: 550px;
+    }
+
+    .title>h1 {
+        font-size: 4rem;
+    }
+
+    .section-one {
+        position: relative;
+        padding-top: 150px;
+        width: 1200px;
+        margin: auto;
+    }
+
+    .section-one-img {
+        background-image: url(../images/desktop/image-interactive.jpg);
+        background-size: cover;
+        width: 800px;
+        height: 500px;
+        margin-left: 40px;
+    }
+
+    .section-one-content {
+        background-color: white;
+        padding: 5rem;
+        width: 500px;
+        position: absolute;
+        top: 300px;
+        right: 50px;
+    }
+
+    .section-two {
+        padding: 15px;
+        width: 1200px;
+        margin: auto;
+        margin-top: 10rem;
+    }
+
+    .section-two>h1 {
+        text-align: left;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .section-two>div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .box-content {
+        box-shadow: inset 200px 200px 200px rgba(0, 0, 0, 0.5);
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 220px;
+        height: 450px;
+        margin-top: 30px;
+    }
+
+    .box-content:hover {
+        cursor: pointer;
+        border-radius: 8px;
+        box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
+    .deep-earth {
+        background-image: url(../images/desktop/image-deep-earth.jpg);
+    }
+    
+    .night-arcade {
+        background-image: url(../images/desktop/image-night-arcade.jpg);
+    }
+    
+    .soccer-team {
+        background-image: url(../images/desktop/image-soccer-team.jpg);
+    }
+    
+    .the-grid {
+        background-image: url(../images/desktop/image-grid.jpg);
+    }
+    
+    .fromup-above {
+        background-image: url(../images/desktop/image-from-above.jpg);
+    }
+    
+    .pocket-borealis {
+        background-image: url(../images/desktop/image-pocket-borealis.jpg);
+    }
+    
+    .the-curiosity {
+        background-image: url(../images/desktop/image-curiosity.jpg);
+    }
+    
+    .makeit-fisheye {
+        background-image: url(../images/desktop/image-fisheye.jpg);
+    }
+
+    .section-two>button {
+        cursor: pointer;
+        letter-spacing: 3px;
+        font-size: 1.7rem;
+        padding: 11px;
+        width: 270px;
+        margin-top: 90px;
+    }
+
+    .section-two>button:hover {
+        color: white;
+        background-color: black;
+        transition: 0.3s;
+    }
+
+    footer {
+        padding-bottom: 35px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footer-box-one>img {
+        display: block;
+        margin-left: 0;
+    }
+
+    .footer-box-one>div {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        color: white;
+    }
+
+    .footer-box-one>div>a {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .footer-box-one>div>a::after {
+        margin-bottom: -3px;
+        content: " ";
+        width: 0%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    .footer-box-one>div>a:hover::after {
+        width: 100%;
+    }
+
+    .footer-box-two>div {
+        margin: 3rem;
+        display: flex;
+        justify-content: right;
+        gap: 15px;
+    }
+
+    .footer-box-two>div>img {
+        position: relative;
+        cursor: pointer;
+    }
+}
