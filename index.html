@@ -4,48 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/portrait.css">
-  <link rel="stylesheet" href="css/scrollbar.css">
-  <title>LoopStudios Page</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/scrollbar.css">
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/script.js" defer></script>
+  <title>Loopstudios Landing Page</title>
 </head>
 
 <body>
-
-  <header>
-    <div class="header">
-      <img src="images/logo.svg" alt="">
-      <nav id="desktopNav">
-        <a>About</a>
-        <a>Careers</a>
-        <a>Events</a>
-        <a>Products</a>
-        <a>Support</a>
+  <header class="header">
+    <div class="header-navigation">
+      <img id="logo" src="images/logo.svg" alt="site-logo">
+      <nav id="navbar">
+        <a id="link-margin-top" href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
       </nav>
-      <img id="menu" src="images/icon-hamburger.svg" alt="" onclick="openMenu()">
+      <button id="btn-menu">
+        <span id="hamburguer"></span>
+      </button>
     </div>
-    <div class="title">
-      <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+    <div class="intro-box">
+      <div class="intro">
+        <span class="intro-txt">Immersive<br>experiences<br>that deliver</span>
+      </div>
     </div>
   </header>
-  <div id="menuNav">
-    <div>
-      <img src="images/logo.svg" alt="">
-      <img id="shutMenu" src="images/icon-close.svg" alt="" onclick="closeMenu()">
-    </div>
-    <nav>
-      <a>ABOUT</a>
-      <a>CAREERS</a>
-      <a>EVENTS</a>
-      <a>PRODUCTS</a>
-      <a>SUPPORT</a>
-    </nav>
-  </div>
 
-  <main>
-    <section class="section-one">
-      <div class="section-one-img"></div>
-      <div class="section-one-content">
-        <h1>THE LEADER IN INTERACTIVE VR</h1>
+  <main id="main">
+    <section class="intro-main">
+      <div class="intro-main-image-box">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/desktop/image-interactive.jpg" type="image/jpg">
+          <img id="intro-image" src="images/mobile/image-interactive.jpg" alt="image-interactive">
+        </picture>
+      </div>
+      <div class="intro-main-content-box">
+        <h1>The leader in interactive VR</h1>
         <p>
           Founded in 2011, Loopstudios has been producing world-class virtual reality
           projects for some of the best companies around the globe. Our award-winning
@@ -55,70 +55,67 @@
       </div>
     </section>
 
-    <section class="section-two">
-      <h1>OUR CREATIONS</h1>
-      <div>
-        <div class="deep-earth box-content">
-          <span>DEEP <br>
-             EARTH</span>
+    <section class="content-creations">
+      <div class="content-creations-nav">
+        <span>Our creations</span>
+        <button class="btn-see-all btn-see-all-desktop">See all</button>
+      </div>
+      <div class="content-creations-search">
+        <input type="text" id="search" placeholder="Insert a keyword" autocomplete="off">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="content-creations-cards">
+        <div class="card-box deep-earth">
+          <span id="name-content-card">Deep <br> earth</span>
         </div>
-        <div class="night-arcade box-content">
-          <span>NIGHT <br>
-             ARCADE</span>
+        <div class="card-box night-arcade">
+          <span id="name-content-card">Night <br> arcade</span>
         </div>
-        <div class="soccer-team box-content">
-          <span>SOCCER <br>
-             TEAM VR</span>
+        <div class="card-box soccer-teamvr">
+          <span id="name-content-card">Soccer <br> team VR</span>
         </div>
-        <div class="the-grid box-content">
-          <span>THE <br>
-             GRID</span>
+        <div class="card-box the-grid">
+          <span id="name-content-card">The <br> grid</span>
         </div>
-        <div class="fromup-above box-content">
-          <span>FROM UP <br>
-             ABOVE VR</span>
+        <div class="card-box from-up-above">
+          <span id="name-content-card">From up <br> above VR</span>
         </div>
-        <div class="pocket-borealis box-content">
-          <span>POCKET <br>
-             BOREALIS</span>
+        <div class="card-box pocket-borealis">
+          <span id="name-content-card">Pocket <br> borealis</span>
         </div>
-        <div class="the-curiosity box-content">
-          <span>THE <br>
-             CURIOSITY</span>
+        <div class="card-box the-curiosity">
+          <span id="name-content-card">The <br> curiosity</span>
         </div>
-        <div class="makeit-fisheye box-content">
-          <span>MAKE IT <br>
-             FISHEYE</span>
+        <div class="card-box make-it">
+          <span id="name-content-card">Make it <br> fisheye</span>
         </div>
       </div>
-      <button>SEE ALL</button>
+      <button class="btn-see-all btn-see-all-mobile">See all</button>
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <div class="footer-box-one">
       <img src="images/logo.svg" alt="">
-      <div>
-        <a>About</a>
-        <a>Careers</a>
-        <a>Events</a>
-        <a>Products</a>
-        <a>Support</a>
+      <div class="footer-box-nav">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Events</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
       </div>
     </div>
     <div class="footer-box-two">
-      <div>
-        <img src="images/icon-facebook.svg" alt="">
-        <img src="images/icon-twitter.svg" alt="">
-        <img src="images/icon-pinterest.svg" alt="">
-        <img src="images/icon-instagram.svg" alt="">
+      <div class="footer-box-medias">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
-      <p>© 2021 Loopstudios. All rights reserved.</p>
+      <span id="copyright">© 2021 Loopstudios. All rights reserved.</span>
     </div>
   </footer>
 
-  <link rel="stylesheet" href="css/desktop.css">
-  <script src="js/script.js"></script>
 </body>
 
 </html>
