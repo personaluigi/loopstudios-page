@@ -213,7 +213,7 @@
 @media screen and (min-width: 1200px) {
   .content-creations {
     width: 1200px;
-    height: 1364px;
+    height: auto;
     margin: auto;
   }
 }
